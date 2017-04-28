@@ -16,6 +16,7 @@ git lfs track "*.filetype"
 Pull Request workflow
 ```
 git checkout -b add-upload-button
+git add .
 git commit -m "Add upload button"
 git push origin HEAD --set-upstream
 ```
@@ -23,7 +24,7 @@ Then submit a pull request on GitHub.com
 
 Update an existing branch
 ```
-git checkout add-upload-button
+git add .
 git commit -m "Colorize upload button blue"
 git push origin add-upload-button
 ```
