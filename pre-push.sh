@@ -6,4 +6,4 @@ git lfs pre-push "$@"
 
 # Update DropBox
 echo "Updating DropBox..."
-rsync -avrhtmWC --update --delete --exclude=".*" --exclude="*.sh" . ~/DropBox/Everyone/Design/
+rsync -avrhtmWC --update --delete --exclude=".*" --exclude="*.sh" . "~/DropBox/Everyone/Design (read-only)/"
