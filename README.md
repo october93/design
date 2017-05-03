@@ -6,6 +6,11 @@ Install [Git LFS](https://git-lfs.github.com/)
 brew install git-lfs
 ```
 
+Configure your local `pre-push` hook to update DropBox
+```
+ln -sf ../../pre-push.sh .git/hooks/pre-push
+```
+
 ## Managing asset types
 Add a new filetype to .gitattributes
 ```
