@@ -6,4 +6,5 @@ git lfs pre-push "$@"
 
 # Update DropBox
 echo "Updating DropBox..."
-rsync -avrhtmWC --update --delete --exclude=".*" --exclude="*.sh" . ~/DropBox/Everyone/"Design (read-only)"/
+rsync -avrhtmWC --update --delete --exclude=".*" --exclude="*.sh" --exclude="README.md" . ~/DropBox/Everyone/"Design (read-only)"/
+echo "This directory is read-only, and is updated via the october/design git repository. Each time a change is pushed to origin, those changes manifest here." > ~/DropBox/Everyone/"Design (read-only)"/README.txt
